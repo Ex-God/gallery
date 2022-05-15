@@ -1,0 +1,36 @@
+.gallery {
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.gallery-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  flex: 1;
+  height: 80vh;
+  margin: 10px;
+  cursor: pointer;
+  transition: all .6s ease-in-out;
+  position: relative;
+}
+
+.gallery-slide h3 {
+  color: #ffffff;
+  font-size: 24px;
+  opacity: 0;
+  left: 10px;
+  bottom: 20px;
+  position: absolute;
+}
+
+.gallery-slide.active {
+  flex: 8;
+}
+
+.gallery-slide.active h3 {
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
